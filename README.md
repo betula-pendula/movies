@@ -2,6 +2,16 @@
 
 > test task
 
+technology stack
+- HTML/CSS
+- vue js
+- npm
+- webpack template-simple
+- bootstrap 4
+- vue router
+- vue-plain-pagination
+- axios
+
 ## Build Setup
 
 ``` bash
