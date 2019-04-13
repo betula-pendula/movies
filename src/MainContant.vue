@@ -4,10 +4,11 @@
       <div class="row">
         <div
           class="col-lg-2 col-md-6 col-sm-6 img-margin"
-          v-for="a in info.data.results"
+          v-for="(a, index) in info.data.results"
           :key="a.id"
         >
-          <router-link :to="'/movie?q=' + JSON.stringify(a)">
+
+          <router-link :to="'/movie?q=' + currentPage + '&n=' + index ">
             <div class="tooltip-img">
               <img :src="poster + a.poster_path" width="100%">
               <span class="tooltiptext">{{ a.original_title }}</span>
@@ -46,11 +47,11 @@ export default {
         liDisable: "disabled",
         button: "page-link"
       },
-      customLabels: {
-        first: false,
-        prev: "Previous",
-        next: "Next",
-        last: false
+      paginationAnchorTexts: {
+        first: 'First',
+        prev: 'Previous',
+        next: 'Next',
+        last: 'Last'
       }
     };
   },

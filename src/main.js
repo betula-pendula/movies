@@ -13,7 +13,7 @@ const routes = [{
   {
     path: '/movie',
     component: Movie,
-    props: (route) => ({ query: route.query.q })
+    props: (route) => ({ query: route.query.q, number: route.query.n})
   }
 ]
 
