@@ -1,23 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+import MainContant from './MainContant.vue'
+import Movie from './Movie.vue'
 
 Vue.use(VueRouter)
 
-const Foo = {
-  template: '<div>foo</div>'
-}
-const Bar = {
-  template: '<div>bar</div>'
-}
-
 const routes = [{
-    path: '/foo',
-    component: Foo
+    path: '/',
+    component: MainContant
   },
   {
-    path: '/bar',
-    component: Bar
+    path: '/movie',
+    component: Movie,
+    props: (route) => ({ query: route.query.q })
   }
 ]
 

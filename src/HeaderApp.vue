@@ -31,12 +31,7 @@
 
 <script>
 export default {
-  el: "#header-app",
-  data() {
-    return {
-      charters: charters
-    };
-  }
+  el: "#header-app"
 };
 </script>
 
