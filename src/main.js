@@ -11,6 +11,11 @@ const routes = [{
     component: MainContant
   },
   {
+    path: '/home',
+    component: MainContant,
+    props: (route) => ({ queryPath: route.query.q})
+  },
+  {
     path: '/movie',
     component: Movie,
     props: (route) => ({ query: route.query.q, number: route.query.n})

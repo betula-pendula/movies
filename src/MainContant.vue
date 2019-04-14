@@ -7,7 +7,6 @@
           v-for="(a, index) in info.data.results"
           :key="a.id"
         >
-
           <router-link :to="'/movie?q=' + currentPage + '&n=' + index ">
             <div class="tooltip-img">
               <img :src="poster + a.poster_path" width="100%">
@@ -40,7 +39,6 @@ export default {
       poster: "http://image.tmdb.org/t/p/w342",
       currentPage: 1,
       bootstrapPaginationClasses: {
-        // http://getbootstrap.com/docs/4.1/components/pagination/
         ul: "pagination justify-content-center",
         li: "page-item",
         liActive: "active",
@@ -72,10 +70,6 @@ export default {
 </script>
 
 <style>
-#app {
-  background-color: #f1f2f4;
-}
-
 .app-margin {
   margin-top: 2em;
 }

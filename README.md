@@ -11,6 +11,8 @@ technology stack
 - vue router
 - vue-plain-pagination
 - axios
+- fonts google
+- awesome icon
 
 ## Build Setup
 

@@ -2,11 +2,11 @@
   <div id="header-app">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <router-link class="nav-link" to="/">
-        <img src="/src/assets/logo.png" width="60" height="60" alt>
-      </router-link>
-      <strong>
+        <img src="/src/assets/logo.png" width="40" height="40" alt>
+        <strong>
         <h2>Movies</h2>
-      </strong>
+        </strong>
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -41,7 +41,7 @@ export default {
 }
 
 .bg-light {
-  background-color: #464c58 !important;
+  background-color: #464d59 !important;
 }
 
 h2 {
@@ -55,5 +55,13 @@ h2 {
 .text-menu-navbar li {
   margin-left: 1em;
   margin-right: 1em;
+}
+
+.nav-link h2 {
+  font-size: 12pt;
+  margin-left: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display: inline;
 }
 </style>
